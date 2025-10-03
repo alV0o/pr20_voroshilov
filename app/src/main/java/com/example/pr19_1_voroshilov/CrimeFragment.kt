@@ -10,6 +10,8 @@ import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
 import androidx.fragment.app.Fragment
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import java.text.DateFormat
 import java.util.Date
 import java.util.UUID
 
@@ -21,7 +23,7 @@ class CrimeFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        crime = Crime(UUID.randomUUID(), Date())
+        crime = Crime(UUID.randomUUID(), DateFormat.getDateInstance())
     }
 
     override fun onCreateView(
